@@ -1,6 +1,6 @@
 package com.nhnacademy.aiot.MainSystem.System;
 
-import com.nhnacademy.aiot.Start;
+import com.nhnacademy.aiot.TicTacToe;
 import com.nhnacademy.aiot.MainSystem.Connect.ConnectManager;
 import com.nhnacademy.aiot.MainSystem.MessageTransfer.MessageManager;
 import com.nhnacademy.aiot.MainSystem.MessageTransfer.MessageSender;

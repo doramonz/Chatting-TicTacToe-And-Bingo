@@ -28,7 +28,7 @@ public class MainManager {
         String[] parseMessages = MessageManager.getInstance().parseMessage(message);
         if (parseMessages[0].toUpperCase().equals("!HELP")) {
             TransferManager.getInstance().sendMessage(
-                    "------Help------\n!List : Show the opend room list.\n!Change <UserName> : Change User Name.\n!help : Show help.\n!Room <TYPE> <NAME> : Make room. (Type : Chat, TICTACTOE)\n!Exit : Exit.",
+                    "------Help------\n!List : Show the opend room list.\n!Change <UserName> : Change User Name.\n!Enter <Room Name> : Enter the room\n!help : Show help.\n!Room <TYPE> <NAME> : Make room. (Type : Chat, TICTACTOE)\n!Exit : Exit.",
                     connect, UserType.SERVER);
         } else if (parseMessages[0].toUpperCase().equals("!LIST")) {
             TransferManager.getInstance().sendMessage(RoomManager.getInstance().getRoomList(), connect,

@@ -82,7 +82,8 @@ public class BingoManager {
             }
         } else if (parseMessages[0].toUpperCase().equals("!RESTART")) {
             if (getRoom(connect).getGameState() == GameState.PLAYING
-                    || getRoom(connect).getGameState() == GameState.END) {
+                    || getRoom(connect).getGameState() == GameState.END
+                    || getRoom(connect).getGameState() == GameState.MAKEBOARD) {
                 getRoom(connect).restartGame(connect);
             } else {
                 TransferManager.getInstance().sendMessage("Restart can be used at playing or end", connect,
